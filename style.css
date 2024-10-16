@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Cormorant Garamond", serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* overflow: hidden;
+    overflow-y: scroll; */
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+.logo{
+    width: 120px;
+    border-radius: 50%;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+.links:hover{
+    color: red;
+    text-decoration: underline;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+    
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Updock", serif;
+    font-weight: 500;
+}
+#lname{
+    font-family: "Updock", serif;
+    font-weight: 600;
+    color:coral;
+}
+#user-details{
+    line-height: 1.5;
+    font-weight: 600;
+}
+#download{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.home-img{
+    width: 45%; 
+    height: 75%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    /* doubt */
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.home-img:hover #shape{
+    bottom: 80px;
+}
+.home-img:hover #girl{
+    left: 30%;
+}
+#about{
+    margin: 15% 0px 0px 0px;
+}
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 35px;
+    font-weight: 700;
+}
+.sub-head{
+    font-size: 25px;
+    color:brown;
+    font-weight: 700;
+}
+.about-body{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    align-items: center;
+}
+.img1{
+    width: 80%;
+}
+.about-content{
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 10px;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+.skills{
+    margin: 15% 8% 0px 8%;
+}
+.skill-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    margin-top: 20px;
+    margin-left: 25px;
+} 
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.bar-head, .barpercent{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orange;
+    width: 94%;
+}
+.cssbar{
+    background-color: orange;
+    width: 79%;
+}
+.jsbar{
+    background-color: orange;
+    width: 88%;
+}
+.reactbar{
+    background-color: orange;
+    width: 71%;
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid 2px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red, coral,brown);
+}
+.icon:hover .brands{
+    color: white;
+    /* rotate is a user defined variable  4s is the seconds */
+    animation: rotate 4s; 
+}
+/* definition of rotate */
+@keyframes rotate{
+    /* from 0% to 100%  is defined */
+            /* roatate() is the build in function */
+
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 700;
+}
+.upArrow{
+    float: right;
+    margin-top: -40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: antiquewhite;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
